@@ -140,4 +140,59 @@ public class SistemaPetShop {
         System.out.println("Pet: " + pet);
 
         System.out.println(pacote);
-
+        Cliente cliente1 = new Cliente("Carol", "(61)99848-2810", "carolpsico@gamil.com");
+        Pet pet1 = new Pet("Biluca", "Cachorro", "Vira lata", 5, 15.0);
+        
+        cliente.adicionarPet(pet1);
+        Date hoje1= new Date();
+        Servico banho1 = new BanhoETosa(hoje);
+        PacoteServicos pacote1 = new PacoteServicos();
+        pacote1.adicionarServico(banho); 
+        System.out.println("Cliente: " + cliente1);
+        System.out.println("Pet: " + pet1);
+        System.out.println(pacote1);
+      
+        Cliente cliente2 = new Cliente("Angelica", "(61)99848-2810", "Angelica-avila@hotmail.com");
+        Pet pet2 = new Pet("Cherie", "Cachorro", "Vira lata", 7, 4.0);
+        
+        cliente.adicionarPet(pet2);
+        Date hoje2= new Date();
+        Servico banho2 = new BanhoETosa(hoje);
+        PacoteServicos pacote2 = new PacoteServicos();
+        pacote2.adicionarServico(banho); 
+        System.out.println("Cliente: " + cliente2);
+        System.out.println("Pet: " + pet2);
+        System.out.println(pacote2);
+        
+        Cliente cliente3 = new Cliente("Gessica", "(61)99848-2810", "gessica-siqueira@hotmail.com");
+        Pet pet3 = new Pet("Pink", "Cachorro", "Pinsher", 6, 3.0);
+        
+        cliente.adicionarPet(pet3);
+        Date hoje3= new Date();
+        Servico banho3 = new BanhoETosa(hoje);
+        PacoteServicos pacote3 = new PacoteServicos();
+        pacote3.adicionarServico(banho); 
+        System.out.println("Cliente: " + cliente3);
+        System.out.println("Pet: " + pet3);
+        System.out.println(pacote3);
+        
+        Cliente cliente4 = new Cliente("Camila", "(61)99848-2810", "camila-rios@hotmail.com");
+        Pet pet4 = new Pet("Atila", "Cachorro", "Golden Retriver", 2, 18.0);
+        
+        cliente.adicionarPet(pet4);
+        
+        Calendar cal = Calendar.getInstance();
+        cal.set(2026, Calendar.APRIL, 20);
+        
+        
+        Servico banho4 = new BanhoETosa(dataAgendada);
+        PacoteServicos pacote4 = new PacoteServicos();
+        pacote4.adicionarServico(banho); 
+        System.out.println("Cliente: " + cliente4);
+        System.out.println("Pet: " + pet4);
+        System.out.println(pacote4);
+        
+        
+        
+    }
+}
